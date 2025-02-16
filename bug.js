@@ -1,0 +1,1 @@
+The issue stems from attempting to access a Firebase Realtime Database reference before the database connection is fully established.  This often occurs when trying to read or write data within the `initializeApp` function or immediately after calling it.  Firebase's asynchronous nature means the connection isn't instantaneous.
